@@ -9,15 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Outputs\items.json" />
-    <None Remove="Outputs\occurences.json" />
+    <None Remove="Basefiles\items.json" />
+    <None Remove="Basefiles\occurences.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Outputs\items.json">
+    <EmbeddedResource Include="Basefiles\items.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Outputs\occurences.json">
+    <EmbeddedResource Include="Basefiles\occurences.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

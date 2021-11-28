@@ -8,7 +8,7 @@ namespace dope_item_metrics
         public static void Main(string[] args)
         {
             var appPath = Path.GetDirectoryName(Environment.ProcessPath);
-            var filePath = Path.Combine(appPath, "Outputs");
+            var filePath = Path.Combine(appPath, "Basefiles");
 
             var occurences = JsonConvert.DeserializeObject<Dictionary<string, int>>(File.ReadAllText(Path.Combine(filePath, "occurences.json")));
             var items = JsonConvert.DeserializeObject<Items>(File.ReadAllText(Path.Combine(filePath, "items.json")));
