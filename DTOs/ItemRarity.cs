@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace dope_stats.DTOs
+﻿namespace dope_stats.DTOs
 {
     public class ItemRarity
     {
