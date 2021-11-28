@@ -30,11 +30,6 @@ namespace dope_item_metrics
             File.WriteAllText("Outputs\\itemOccurenceByAttribute.json", serializedOccurence);
             Console.WriteLine("Wrote to itemOccurenceByAttribute.json!");
 
-            /*
-             * Not needed because we already have it in memory
-            */
-            //var itemOccurenceByAttribute = JsonConvert.DeserializeObject<ItemsGroupedWithValue>(File.ReadAllText(@"Outputs\ItemsGroupedByOccurence.json"));
-
             var itemRarityByAttribute = new ItemRarity
             {
                 clothes = ParseItemsAddRarity(itemOccurenceByAttribute.clothes, items.clothes),
