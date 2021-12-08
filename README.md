@@ -4,6 +4,12 @@ Calculates probability by dividing the item occurence with the total item amount
 
 Gets item scores by mapping loot items to rarity-score scores
 
-## how to run it
+## Run locally
 
-`npx ts-node parse.ts`
+```
+# Install dependencies
+yarn install
+
+# Generate json files
+npx ts-node parse.ts
+```
