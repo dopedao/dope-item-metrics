@@ -1,9 +1,9 @@
 # dope-item-metrics
 
-Calculates rarities by dividing the item occurence with the total item amount of the itemgroup
+Calculates probability by dividing the item occurence with the total item amount * 100
+
+Gets item scores by mapping loot items to rarity-score scores
 
 ## how to run it
 
-`dotnet run`
-
-Tested with .Net 6
+`npx ts-node parse.ts`
