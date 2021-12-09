@@ -24,9 +24,9 @@ itemMap.clear();
 for (let value in occurences) {
     itemMap.set(value, occurences[value] / 80);
 }
-const itemProbablities = Object.fromEntries(itemMap);
+const itemProbabilities = Object.fromEntries(itemMap);
 
-fs.writeFile('outputs\\itemProbabilities.json', JSON.stringify(itemProbablities, null, 2), function (err) {
+fs.writeFile('outputs\\itemProbabilities.json', JSON.stringify(itemProbabilities, null, 2), function (err) {
     if (err) throw err;
     console.log("Completed itemProbabilities!")
 })
